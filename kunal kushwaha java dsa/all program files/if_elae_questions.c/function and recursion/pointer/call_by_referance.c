@@ -1,0 +1,19 @@
+#include <stdio.h>
+void swap(int *a, int *b);
+
+int main()
+{
+    int x = 3, y = 4;
+    printf("thje value x and y  before swape is %d and %d \n", x, y);
+    swap(&x, &y);
+    printf("the value of x andf y before swap is %d and %d \n", x, y);
+
+    return 0;
+}
+void swap(int *a, int *b)
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
